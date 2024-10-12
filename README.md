@@ -61,4 +61,4 @@ Optimized Image Management on Server: Implemented logic to save images directly 
 
 Added Fallback URL for Images: Configured a fallback mechanism to handle missing or unavailable images from the API. If an image is not provided, a default "No Image Available" placeholder will be displayed to maintain the visual integrity of the interface.
 
-[Watch the video](./20241012_183338.mp4)
+<video controls src="20241012_183338.mp4" title="Title"></video>
