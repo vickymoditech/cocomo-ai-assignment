@@ -15,7 +15,6 @@ type falResponse = {
   }[];
 }
 
-
 export async function GET(): Promise<NextResponse> {
   try {
     const todos = await prisma.todo.findMany({
@@ -36,14 +35,16 @@ export async function POST(request: Request): Promise<NextResponse> {
       return NextResponse.json({ error: 'title and dueDate are required' }, { status: 400 });
     }
 
+    const todoCreate: any = {
+      title,
+      dueDate,
+    }
+
     const imagePath = await fetchImage(title);
+    if (imagePath) todoCreate.imageUrl = imagePath
 
     const todo = await prisma.todo.create({
-      data: {
-        title,
-        imageUrl: imagePath,
-        dueDate,
-      },
+      data: todoCreate,
     });
 
     return NextResponse.json(todo, { status: 201 });
