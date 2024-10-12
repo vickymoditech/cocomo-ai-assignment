@@ -46,7 +46,7 @@ You will be provided an API key to make the fetch request to fal.ai.
 
 Thanks for your time and effort. We'll be in touch soon!
 
-### output
+### OutPut
 
 - Added DueDate
 - Added Loader at the API level
@@ -55,4 +55,4 @@ Thanks for your time and effort. We'll be in touch soon!
 - Saving image on server so we can easily render the image while showing the Todo List
 - Added Fallback URL. if we are not getting any image from API then it will show No-image.
 
-<video controls src="20241012_183338.mp4" title="Title"></video>
+[Watch the video](./20241012_183338.mp4)
