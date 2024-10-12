@@ -45,3 +45,14 @@ You will be provided an API key to make the fetch request to fal.ai.
 5. Message [Kunal on LinkedIn](https://www.linkedin.com/in/kunalsh22/) with a link of your submission. 
 
 Thanks for your time and effort. We'll be in touch soon!
+
+### output
+
+- Added DueDate
+- Added Loader at the API level
+- Added Loader at the image level
+- Implemented Local level operation
+- Saving image on server so we can easily render the image while showing the Todo List
+- Added Fallback URL. if we are not getting any image from API then it will show No-image.
+
+<video controls src="20241012_183338.mp4" title="Title"></video>
