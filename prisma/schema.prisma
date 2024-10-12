@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Todo {
+  id        Int      @id @default(autoincrement())
+  title     String
+  imageUrl  String?  @default("no-image-icon.png")
+  dueDate   DateTime // it's required
+  createdAt DateTime @default(now())
+}
