@@ -48,11 +48,17 @@ Thanks for your time and effort. We'll be in touch soon!
 
 ### OutPut
 
-- Added DueDate
-- Added Loader at the API level
-- Added Loader at the image level
-- Implemented Local level operation
-- Saving image on server so we can easily render the image while showing the Todo List
-- Added Fallback URL. if we are not getting any image from API then it will show No-image.
+Implemented Due Date Feature: Introduced a due date field to enhance task management by allowing users to set deadlines for each item on the Todo List.
+
+Added API-Level Loader: Integrated a loading indicator at the API level to improve the user experience by providing feedback during data fetching or processing operations.
+
+Incorporated Image-Level Loader: Added a loader specific to image rendering, ensuring the interface remains responsive while images load asynchronously.
+Enabled Local-Level Operations: Developed support for local storage and offline operations, allowing users to interact with the application even without an active internet connection.
+
+Optimized Local-Level Operations: Implemented add and delete operations at the local level, reducing unnecessary API calls by updating the Todo List instantly in the UI. This avoids re-fetching the entire list after each operation, ensuring smoother and faster performance.
+
+Optimized Image Management on Server: Implemented logic to save images directly on the server, simplifying the rendering process when displaying the Todo List. This reduces load times and ensures reliable image retrieval.
+
+Added Fallback URL for Images: Configured a fallback mechanism to handle missing or unavailable images from the API. If an image is not provided, a default "No Image Available" placeholder will be displayed to maintain the visual integrity of the interface.
 
 [Watch the video](./20241012_183338.mp4)
